@@ -1,0 +1,52 @@
+/* Fondos para algunos Pane */
+
+. bodybg {
+    -fx-background-image: url("/resources/sec-cult.png");
+    -fx-background-size: 100% 100%;
+}
+
+. mainBackground {
+    -fx-background-image: url("/resources/cdmx-fondo.jpg");
+    -fx-background-size: 100% 100%;
+}
+
+. bodybgIns {
+    -fx-background-image: url("/resources/gfc.jpg");
+    -fx-background-size: 100% 100%;
+}
+
+/* Estilo personalizado para los botones */
+.button {
+    -fx-font-weight: bold;
+    -fx-background-color: #000000;
+    -fx-background-radius: 22;
+    -fx-font-size: 16;
+    -fx-text-fill: white;
+}
+
+.button:hover{
+    -fx-font-weight: bold;
+    -fx-background-color: white;
+    -fx-background-radius: 22;
+    -fx-font-size: 16;
+    -fx-text-fill: #000000;
+    -fx-border-color: #000000;
+    -fx-border-radius: 20;
+    -fx-border-width: 3;
+}
+
+.button:pressed {
+    -fx-font-weight: bold;
+    -fx-background-color: white;
+    -fx-background-radius: 22;
+    -fx-font-size: 16;
+    -fx-text-fill: #228B22;
+    -fx-border-color: #000000;
+    -fx-border-radius: 20;
+    -fx-border-width: 3;
+}
+
+/* Cambiar el color de las letras del hyperlink porque en scenebuilder no lo permitía */
+.hyperlinkcolor {
+    -fx-text-fill: black;
+}

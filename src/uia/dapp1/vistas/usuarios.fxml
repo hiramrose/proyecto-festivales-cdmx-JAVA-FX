@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="1160.0" xmlns="http://javafx.com/javafx/8.0.271" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uia.dapp1.vistas.UsuariosController">
+   <children>
+      <SplitPane dividerPositions="0.3233151183970856" layoutX="400.0" layoutY="170.0" prefHeight="500.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="327.0" styleClass="bodybgUserLeft" stylesheets="@../stylesheets/botones.css">
+               <children>
+                  <GridPane layoutX="23.0" layoutY="77.0" prefHeight="328.0" prefWidth="302.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="135.0" minWidth="10.0" prefWidth="115.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="165.0" minWidth="10.0" prefWidth="165.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label text="ID:">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <Label text="* Nombre:" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <Label text="Segundo nombre:" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <Label text="* Apellido paterno:" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <Label text="Apellido materno:" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <Label text="Teléfono:" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <Label text="* E-mail:" GridPane.rowIndex="6">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <Label text="* Edad:" GridPane.rowIndex="7">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <Label text="* Sexo:" GridPane.rowIndex="8">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <Label text="* Dependencia:" GridPane.rowIndex="9">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <TextField fx:id="txtID" prefHeight="25.0" prefWidth="199.0" GridPane.columnIndex="1" />
+                        <TextField fx:id="txtNombre" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <TextField fx:id="txtNombre2" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <TextField fx:id="txtAP" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <TextField fx:id="txtAM" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <TextField fx:id="txtTel" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <TextField fx:id="txtEmail" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                        <DatePicker fx:id="datePickerEdad" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                        <ComboBox fx:id="comboDep" prefHeight="25.0" prefWidth="174.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                        <HBox prefHeight="100.0" prefWidth="200.0" spacing="15.0" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                           <children>
+                              <RadioButton fx:id="SexoF" mnemonicParsing="false" text="Femenino">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="GrupoSexo" />
+                                 </toggleGroup></RadioButton>
+                              <RadioButton fx:id="SexoM" mnemonicParsing="false" text="Masculino" toggleGroup="$GrupoSexo" />
+                           </children>
+                           <padding>
+                              <Insets top="8.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </GridPane>
+                  <ButtonBar layoutX="-1.0" layoutY="418.0" prefHeight="40.0" prefWidth="200.0">
+                    <buttons>
+                      <Button mnemonicParsing="false" onAction="#agregarNuevousuario" styleClass="btnWhite" stylesheets="@../stylesheets/botones.css" text="Nuevo" />
+                        <Button fx:id="btnGuardar" mnemonicParsing="false" onAction="#guardarInsert" styleClass="btnGreen" stylesheets="@../stylesheets/botones.css" text="Guardar" />
+                        <Button fx:id="btnActualizar" disable="true" mnemonicParsing="false" onAction="#actualizarUpdate" styleClass="btnBlue" stylesheets="@../stylesheets/botones.css" text="Actualizar" />
+                        <Button fx:id="btnEliminar" disable="true" mnemonicParsing="false" onAction="#eliminarDelete" styleClass="btnRed" stylesheets="@../stylesheets/botones.css" text="Eliminar" />
+                    </buttons>
+                  </ButtonBar>
+                  <Label layoutX="115.0" layoutY="23.0" prefHeight="48.0" prefWidth="139.0" text="USUARIOS">
+                     <font>
+                        <Font name="Jokerman" size="24.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="679.0">
+               <children>
+                  <TableView fx:id="tablaUsuario" layoutX="228.0" layoutY="149.0" prefHeight="498.0" prefWidth="644.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="clmnID" prefWidth="32.0" text="ID" />
+                        <TableColumn fx:id="clmnNom" prefWidth="64.0" text="Nombre" />
+                        <TableColumn fx:id="clmnNom2" prefWidth="78.0" text="2° Nombre" />
+                        <TableColumn fx:id="clmnAP" prefWidth="65.0" text="Apellido" />
+                        <TableColumn fx:id="clmnAM" prefWidth="76.0" text="2° Apellido" />
+                        <TableColumn fx:id="clmnTel" prefWidth="85.0" text="Teléfono" />
+                        <TableColumn fx:id="clmnEmail" prefWidth="98.0" text="E-mail" />
+                        <TableColumn fx:id="clmnEdad" prefWidth="91.0" text="Edad" />
+                        <TableColumn fx:id="clmnSexo" prefWidth="50.0" text="Sexo" />
+                        <TableColumn fx:id="clmnDep" prefWidth="142.0" text="Dependencia" />
+                    </columns>
+                  </TableView>
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

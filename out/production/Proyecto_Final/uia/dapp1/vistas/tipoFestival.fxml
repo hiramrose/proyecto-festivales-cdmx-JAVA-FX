@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8.0.271" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uia.dapp1.vistas.TipoFestivalController">
+   <children>
+      <SplitPane dividerPositions="0.5678391959798995" layoutX="70.0" layoutY="100.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="242.0" prefWidth="298.0" styleClass="bodybgUserLeft" stylesheets="@../stylesheets/botones.css">
+               <children>
+                  <Label layoutX="80.0" layoutY="20.0" prefHeight="40.0" prefWidth="151.0" text="Tipo de Festival">
+                     <font>
+                        <Font name="Jokerman" size="18.0" />
+                     </font>
+                  </Label>
+                  <GridPane layoutX="49.0" layoutY="69.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label text="Añadir categoría:" />
+                        <Label text="ID:" GridPane.rowIndex="1" />
+                        <Button mnemonicParsing="false" onAction="#agregarTF" prefHeight="25.0" prefWidth="104.0" styleClass="btnWhite" stylesheets="@../stylesheets/botones.css" text="Nuevo" GridPane.columnIndex="1" />
+                        <Label text="Tipo de Festival:" GridPane.rowIndex="2" />
+                        <TextField fx:id="tipoFestID" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <TextField fx:id="tipoFest" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                     </children>
+                  </GridPane>
+                  <ButtonBar layoutX="7.0" layoutY="159.0" prefHeight="40.0" prefWidth="200.0">
+                    <buttons>
+                        <Button fx:id="btnGuardar" mnemonicParsing="false" onAction="#guardarInsert" styleClass="btnGreen" stylesheets="@../stylesheets/botones.css" text="Guardar" />
+                        <Button fx:id="btnActualizar" mnemonicParsing="false" onAction="#actualizarUpdate" styleClass="btnBlue" stylesheets="@../stylesheets/botones.css" text="Actualizar" />
+                        <Button fx:id="btnEliminar" mnemonicParsing="false" onAction="#eliminarDelete" styleClass="btnRed" stylesheets="@../stylesheets/botones.css" text="Eliminar" />
+                    </buttons>
+                  </ButtonBar>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <TableView fx:id="tablaTF" layoutX="39.0" layoutY="-31.0" prefHeight="169.0" prefWidth="298.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="clmnID" prefWidth="52.0" text="ID" />
+                      <TableColumn fx:id="clmnTF" prefWidth="245.0" text="Disciplina del Festival" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

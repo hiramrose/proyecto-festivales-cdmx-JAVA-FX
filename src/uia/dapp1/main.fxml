@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="550.0" styleClass="mainBackground" stylesheets="@stylesheets/miCSS.css" xmlns="http://javafx.com/javafx/8.0.271" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uia.dapp1.Controller">
+   <children>
+      <Pane layoutX="75.0" layoutY="50.0" prefHeight="300.0" prefWidth="400.0" style="-fx-background-color: #90EE90;" stylesheets="@stylesheets/miCSS.css">
+         <children>
+            <Label layoutX="52.0" layoutY="74.0" text="Usuario administrador:">
+               <font>
+                  <Font name="Tahoma Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="52.0" layoutY="143.0" text="Contraseña:">
+               <font>
+                  <Font name="Tahoma Bold" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usuarioIngresado" layoutX="52.0" layoutY="98.0" prefHeight="32.0" prefWidth="296.0" promptText="Ingresa tu nombre de usuario " />
+            <PasswordField fx:id="passwordIngresado" layoutX="51.0" layoutY="166.0" prefHeight="32.0" prefWidth="296.0" promptText="Ingresa tu contraseña" />
+            <Button fx:id="btnLogin" layoutX="158.0" layoutY="215.0" mnemonicParsing="false" onAction="#handleButtonLogin" text="Ingresar" />
+            <Hyperlink layoutX="138.0" layoutY="263.0" onAction="#handleRecordarPassword" styleClass="hyperlinkcolor" stylesheets="@stylesheets/miCSS.css" text="Recuperar contraseña" />
+            <Pane layoutX="247.0" layoutY="14.0" prefHeight="62.0" prefWidth="139.0" styleClass="bodybg" stylesheets="@stylesheets/miCSS.css" />
+         </children></Pane>
+   </children>
+</AnchorPane>

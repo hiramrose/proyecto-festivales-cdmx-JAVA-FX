@@ -1,0 +1,131 @@
+/* Estilo personalizado para los botones */
+
+. btnRed {
+    -fx-background-color: red;
+    -fx-background-radius: 30;
+    -fx-background-insets: 0;
+    -fx-text-fill: white;
+}
+
+.btnRed:hover{
+    -fx-font-weight: bold;
+    -fx-background-color: #FF0F00;
+    -fx-background-radius: 12;
+    -fx-font-size: 12;
+    -fx-text-fill: #000000;
+    -fx-border-color: #000000;
+    -fx-border-radius: 10;
+    -fx-border-width: 2;
+}
+
+.btnRed:pressed {
+    -fx-font-weight: bold;
+    -fx-background-color: #FF0F00;
+    -fx-background-radius: 12;
+    -fx-font-size: 12;
+    -fx-text-fill: #228B22;
+    -fx-border-color: #000000;
+    -fx-border-radius: 10;
+    -fx-border-width: 2;
+}
+
+. btnBlue {
+    -fx-background-color: #0070FF;
+    -fx-background-radius: 30;
+    -fx-background-insets: 0;
+    -fx-text-fill: white;
+}
+
+.btnBlue:hover{
+    -fx-font-weight: bold;
+    -fx-background-color: #0097FF;
+    -fx-background-radius: 12;
+    -fx-font-size: 12;
+    -fx-text-fill: #000000;
+    -fx-border-color: #000000;
+    -fx-border-radius: 10;
+    -fx-border-width: 2;
+}
+
+.btnBlue:pressed {
+    -fx-font-weight: bold;
+    -fx-background-color: #0097FF;
+    -fx-background-radius: 12;
+    -fx-font-size: 12;
+    -fx-text-fill: #228B22;
+    -fx-border-color: #000000;
+    -fx-border-radius: 10;
+    -fx-border-width: 2;
+}
+
+. btnGreen {
+    -fx-background-color: green;
+    -fx-background-radius: 30;
+    -fx-background-insets: 0;
+    -fx-text-fill: white;
+}
+
+.btnGreen:hover{
+    -fx-font-weight: bold;
+    -fx-background-color: #00D330;
+    -fx-background-radius: 12;
+    -fx-font-size: 12;
+    -fx-text-fill: #000000;
+    -fx-border-color: #000000;
+    -fx-border-radius: 10;
+    -fx-border-width: 2;
+}
+
+.btnGreen:pressed {
+    -fx-font-weight: bold;
+    -fx-background-color: #00D330;
+    -fx-background-radius: 12;
+    -fx-font-size: 12;
+    -fx-text-fill: #228B22;
+    -fx-border-color: #000000;
+    -fx-border-radius: 10;
+    -fx-border-width: 2;
+}
+
+. btnWhite {
+    -fx-background-color: white;
+    -fx-background-radius: 30;
+    -fx-background-insets: 0;
+    -fx-border-color: #000000;
+    -fx-border-radius: 10;
+    -fx-text-fill: black;
+}
+
+.btnWhite:hover{
+    -fx-font-weight: bold;
+    -fx-background-color: white;
+    -fx-background-radius: 12;
+    -fx-font-size: 12;
+    -fx-text-fill: #000000;
+    -fx-border-color: #000000;
+    -fx-border-radius: 10;
+    -fx-border-width: 2;
+}
+
+.btnWhite:pressed {
+    -fx-font-weight: bold;
+    -fx-background-color: white;
+    -fx-background-radius: 12;
+    -fx-font-size: 12;
+    -fx-text-fill: #228B22;
+    -fx-border-color: #000000;
+    -fx-border-radius: 10;
+    -fx-border-width: 2;
+}
+
+/* Imagen de fondo */
+. bodybgInsLeft {
+    -fx-background-image: url("/resources/logoFestivalesCDMX.jpg");
+    -fx-background-size: 100% 100%;
+}
+
+/* Imagen de fondo*/
+. bodybgUserLeft {
+    -fx-background-image: url("/resources/userGradient.jpg");
+    -fx-background-size: 100% 100%;
+}

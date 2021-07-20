@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="bodybgIns" stylesheets="@../stylesheets/miCSS.css" xmlns="http://javafx.com/javafx/8.0.271" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uia.dapp1.vistas.PrincipalController">
+   <children>
+      <ButtonBar layoutX="161.0" layoutY="60.0" prefHeight="40.0" prefWidth="400.0">
+        <buttons>
+          <Button fx:id="btnInstituciones" mnemonicParsing="false" onAction="#handleButtonInstituciones" stylesheets="@../stylesheets/miCSS.css" text="Instituciones" />
+            <Button fx:id="btnUsuarios" mnemonicParsing="false" onAction="#handleButtonUsuarios" stylesheets="@../stylesheets/miCSS.css" text="Usuarios" />
+            <Button fx:id="tipoFestival" mnemonicParsing="false" onAction="#handleButtonTipoFestival" stylesheets="@../stylesheets/miCSS.css" text="Tipo Festival" />
+        </buttons>
+      </ButtonBar>
+      <Button fx:id="btnSalir" layoutX="464.0" layoutY="337.0" mnemonicParsing="false" onAction="#salir" text="Cerrar Sesión" />
+   </children>
+</AnchorPane>

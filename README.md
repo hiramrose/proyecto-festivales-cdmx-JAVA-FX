@@ -1,4 +1,4 @@
-# proyecto-festivales-cdmx-JAVA-FX-App
-Sistema de gestión de información sobre festivales chilangos conectado a base de datos. 
-Funciones: Login, CRUDs, panel principal, cerrar panel.
-Herramientas: JAVA FX / Scene Builder / CSS / MySQL
+# CDMX-festivals-project-JAVA-FX-App
+Management information system connected to Data Base. 
+Functions: Login, CRUDs, main panel, close panel.
+Tools: JAVA FX / Scene Builder / CSS / MySQL.
